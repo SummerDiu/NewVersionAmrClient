@@ -2,7 +2,7 @@ package cn.edu.seu.sh.newamr.Config;
 
 
 public class CommonConfig {
-    public static String SERVER_IP_ADDRESS = "121.248.51.27";
+    public static String SERVER_IP_ADDRESS = "121.248.55.18";
 
     public static final int AUDIO_SERVER_UP_PORT = 20086;
     public static final int AUDIO_SERVER_DOWN_PORT = 20087;

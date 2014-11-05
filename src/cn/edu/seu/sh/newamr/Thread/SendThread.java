@@ -249,8 +249,8 @@ public class SendThread {
 
         private void udpSend(DatagramSocket udpSocket, byte[] buffer, int sendLength) {
             try {
-                InetAddress ip = InetAddress.getByName(CommonConfig.CLIENT_A_IP_ADDRESS.trim());//换目标通信对象时需要改这里的CLIENT_A_IP_ADDRESS;;
-                int port = CommonConfig.CLIENT_A_PORT;//这里指定对方的接收端口;AUDIO_SERVER_UP_PORT
+                InetAddress ip = InetAddress.getByName(CommonConfig.SERVER_IP_ADDRESS.trim());//换目标通信对象时需要改这里的CLIENT_A_IP_ADDRESS;;
+                int port = CommonConfig.AUDIO_SERVER_UP_PORT;//这里指定对方的接收端口;;CLIENT_A_PORT
 
                 byte[] sendBuffer = new byte[sendLength];
                 System.arraycopy(buffer, 0, sendBuffer, 0, sendLength);
